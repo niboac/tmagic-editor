@@ -11,7 +11,7 @@
     "build:playground": "vite build --config build.vite.config.ts --mode playground",
     "build:libs": "tmagic entry && npm run build:config && npm run build:value && npm run build:event && npm run build:ds:libs",
     "build:ds:libs": "npm run build:ds:config && npm run build:ds:value && npm run build:ds:event",
-    "build:config": "vite build --config build.vite.config.ts --mode config",
+    "build:config": "vite build --config build.vite.config.ts --mode config --emptyOutDir",
     "build:value": "vite build --config build.vite.config.ts --mode value",
     "build:event": "vite build --config build.vite.config.ts --mode event",
     "build:ds:config": "vite build --config build.vite.config.ts --mode ds:config",
